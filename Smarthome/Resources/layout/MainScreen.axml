@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mainSwipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:text="Home Network"
+                        android:layout_width="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:paddingRight="5dp"
+                        android:textColor="@color/primary_text" />
+                    <ImageView
+                        android:src="@drawable/ic_wifi_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wifiImage"
+                        android:gravity="right|center_vertical" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/BtnControlsList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#FFDAFF7F" />
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" >
+  <item android:id="@+id/mnuRefresh"
+          android:icon="@drawable/ic_menu_refresh"
+          android:title="@string/RefreshMenuTitle"
+          app:showAsAction="always"/>
+  <!--app:showAsAction="ifRoom|withText"-->
+  <item android:id="@+id/mnuSettings"
+        android:icon="@drawable/ic_menu_settings"
+        android:title="@string/SettingsMenuTitle"
+        app:showAsAction="never"/>
+</menu>
